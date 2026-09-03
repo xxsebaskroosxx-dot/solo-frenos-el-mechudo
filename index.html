@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Frenos El Mechudo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><img src="logo-solo-frenos.jpg" alt="Solo Frenos El Mechudo"></a>
+    <nav>
+      <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#marcas">Marcas</a><a href="#ubicacion">Ubicación</a><a href="#admin">Administración</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-copy">
+          <span class="eyebrow">Taller de automóviles</span>
+          <h1>Solo Frenos<br><span>El Mechudo</span></h1>
+          <p>Servicio especializado en frenos y mantenimiento automotriz, con atención personalizada y soluciones enfocadas en la seguridad vehicular.</p>
+          <div class="actions"><a class="btn primary" href="#servicios">Ver servicios</a><a class="btn" href="https://maps.app.goo.gl/rrbJPN5kUP2m3vLL9" target="_blank" rel="noopener">Cómo llegar</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="section-heading"><span class="eyebrow">Lo que hacemos</span><h2>Servicios</h2></div>
+      <div class="cards">
+        <article class="card"><h3>Cambio de pastillas</h3><p>Reemplazo y revisión de componentes del sistema de frenos.</p></article>
+        <article class="card"><h3>Discos y tambores</h3><p>Revisión, ajuste y mantenimiento para mejorar el desempeño.</p></article>
+        <article class="card"><h3>Líquido de frenos</h3><p>Reemplazo y revisión del sistema hidráulico de frenado.</p></article>
+        <article class="card"><h3>Mordazas y componentes</h3><p>Ajustes y mantenimiento de diferentes elementos del sistema.</p></article>
+      </div>
+    </section>
+
+    <section id="marcas" class="section alt">
+      <div class="section-heading"><span class="eyebrow">Atención automotriz</span><h2>Marcas de vehículos</h2><p>Marcas incluidas en el prototipo del sitio.</p></div>
+      <div class="brands-grid">
+        <div>CHEVROLET</div><div>RENAULT</div><div>KIA</div><div>MAZDA</div><div>TOYOTA</div><div>NISSAN</div><div>HYUNDAI</div><div>FORD</div>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="section">
+      <div class="location-grid">
+        <div><span class="eyebrow">Visítanos</span><h2>Nuestra ubicación</h2><p>Cra. 17a #15C-19, El Estero, Villavicencio, Meta, Colombia.</p><a class="btn primary" href="https://maps.app.goo.gl/rrbJPN5kUP2m3vLL9" target="_blank" rel="noopener">Abrir Google Maps</a></div>
+        <a class="location-image" href="https://maps.app.goo.gl/rrbJPN5kUP2m3vLL9" target="_blank" rel="noopener"><img src="ubicacion-google-maps.jpg" alt="Ubicación de Solo Frenos El Mechudo en Google Maps"></a>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <div class="admin-card">
+        <div><span class="eyebrow">Acceso privado</span><h2>Panel administrativo</h2><p>Inventario, ventas, clientes, movimientos, reportes y nuevo ticket.</p></div>
+        <button class="btn primary" id="openLogin">Iniciar sesión</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-box"><button class="close" id="closeLogin">×</button><img src="logo-solo-frenos.jpg" alt="Logo" class="login-logo"><h2>Inicio de sesión</h2><form id="loginForm"><input id="user" type="text" placeholder="Usuario" required><input id="pass" type="password" placeholder="Contraseña" required><button class="btn primary full" type="submit">Ingresar</button><p id="loginMessage"></p></form></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
